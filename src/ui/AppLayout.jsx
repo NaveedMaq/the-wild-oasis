@@ -25,15 +25,15 @@ const Container = styled.div`
 `;
 function AppLayout() {
   return (
-    <Container>
-      <StyledAppLayout>
-        <Header />
-        <Sidebar />
-        <Main>
+    <StyledAppLayout>
+      <Header />
+      <Sidebar />
+      <Main>
+        <Container>
           <Outlet />
-        </Main>
-      </StyledAppLayout>
-    </Container>
+        </Container>
+      </Main>
+    </StyledAppLayout>
   );
 }
 
